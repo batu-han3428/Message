@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .container-fluid{
+            height: 100vh; 
+            background: linear-gradient(45deg,rgb(15, 38, 40),rgb(22, 49, 51));
+        }
+        .row{
+            height:100%;
+        }
+        .card{
+            width: 80%; 
+            height: 80%; 
+            background:linear-gradient(45deg,rgb(94, 121, 122),rgb(105, 155, 125),rgb(94, 121, 122));
+        }
+        .card-footer{
+            overflow-x: scroll;  
+            padding:0 10px !important; 
+        }
+
+        .card-footer::-webkit-scrollbar {
+            height: 5px;
+            
+            background-color: white;
+        }
+
+        .card-footer::-webkit-scrollbar-thumb {
+            background:linear-gradient(45deg,rgb(45, 71, 71),rgb(49, 209, 113),rgb(90, 110, 110));
+            
+        }
+
+        .card-footer::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        #alt > div{
+            height: 100px;         
+            width: 100px;
+            flex-shrink: 0;
+            cursor: pointer;
+            background: linear-gradient(45deg,rgb(10, 134, 10),rgb(33, 96, 100),rgb(10, 134, 10));
+            background-size: 500% 500%;
+            animation: arkaPLan 4s ease infinite alternate;
+            transition: 1s;
+        }
+       
+        @keyframes arkaPLan {
+            0% {background-position: 0%}
+            100% {background-position: 100%}
+        }
+        #alt > div:not(:first-child,:last-child){
+            margin:0 10px;
+        }
+        #alt > div:first-child{
+            margin-right: 10px;
+        }
+        #alt > div:last-child{
+            margin-left: 10px;
+        }
+        #alt{    
+            padding:5px 0;
+            display: flex;         
+            height:110px;      
+            padding-right: 1190px;
+        }
+        .foto{
+            width: 100%; 
+            height: 50%;
+            
+        }
+        .foto > img{
+            width: 80%; 
+            height: 100%; 
+            border-radius: 50%; 
+            margin:0 auto;
+            object-fit:scale-down;           
+            background-color: white;
+        }
+        .yazi{
+            width: 100%; 
+            height: 50%; 
+        }
+        .yazi > span{
+            display:block; 
+            font-size:13px;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center align-items-center">
+                <div class="card">
+                    <h5 class="card-header text-center text-light">Web Message & Video</h5>
+                    <div class="card-body">
+                     
+                    </div>
+                    <div class="card-footer p-0">
+                       <div id="alt">
+                            <div>
+                                <div class="foto text-center">
+                                    <img src="img/pp1.jpg" alt="pp" class="img-fluid mt-1">
+                                </div>
+                                <div class="yazi text-light pt-1">
+                                    <span class="text-center">Berna Buket Yazıcıoğlu</span>
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div class="foto text-center">
+                                    <img src="img/pp2.jpg" alt="pp" class="img-fluid mt-1">
+                                </div>
+                                <div class="yazi text-light pt-1">
+                                    <span class="text-center">Berna Yazıcıoğlu</span>
+                                </div>
+                            </div>
+                       
+                            <div>
+                                <div class="foto text-center">
+                                    <img src="img/pp3.jpg" alt="pp" class="img-fluid mt-1">
+                                </div>
+                                <div class="yazi text-light pt-1">
+                                    <span class="text-center">Ezgi Mansur</span>
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div class="foto text-center">
+                                    <img src="img/pp4.jpg" alt="pp" class="img-fluid mt-1">
+                                </div>
+                                <div class="yazi text-light pt-1">
+                                    <span class="text-center">Büşra yıldırım</span>
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div class="foto text-center">
+                                    <img src="img/pp5.webp" alt="pp" class="img-fluid mt-1">
+                                </div>
+                                <div class="yazi text-light pt-1">
+                                    <span class="text-center">İpek bostan</span>
+                                </div>
+                            </div>
+                       
+                            <div>
+                                <div class="foto text-center">
+                                    <img src="img/pp6.jpg" alt="pp" class="img-fluid mt-1">
+                                </div>
+                                <div class="yazi text-light pt-1">
+                                    <span class="text-center">Şeyma çetin</span>
+                                </div>
+                            </div>
+                        
+                            <div>
+                                <div class="foto text-center">
+                                    <img src="img/pp7.jpg" alt="pp" class="img-fluid mt-1">
+                                </div>
+                                <div class="yazi text-light pt-1">
+                                    <span class="text-center">Nazlı batu</span>
+                                </div>
+                            </div>
+                       
+                            <div>
+                                <div class="foto text-center">
+                                    <img src="img/pp8.jpg" alt="pp" class="img-fluid mt-1">
+                                </div>
+                                <div class="yazi text-light pt-1">
+                                    <span class="text-center">Hale Jale Sungurlu</span>
+                                </div>
+                            </div>
+                       
+                            <div>
+                                <div class="foto text-center">
+                                    <img src="img/pp9.jpg" alt="pp" class="img-fluid mt-1">
+                                </div>
+                                <div class="yazi text-light pt-1">
+                                    <span class="text-center">Zerda akıncı</span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="foto text-center">
+                                    <img src="img/pp10.jpg" alt="pp" class="img-fluid mt-1">
+                                </div>
+                                <div class="yazi text-light pt-1">
+                                    <span class="text-center">Pınar Sevim Araklı</span>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+</body>
+</html>
